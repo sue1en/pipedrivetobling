@@ -1,0 +1,26 @@
+{
+  "name": "Desafio_LinkAPI",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/sue1en/pipedrivetobling.git",
+  "author": "Suelen Batista",
+  "license": "MIT",
+  "private": false,
+  "dependencies": {
+    "axios": "^0.22.0",
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "got": "^11.8.2",
+    "mongoose": "^6.0.10",
+    "nodemon": "^2.0.13",
+    "pipedrive": "^12.0.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.13"
+  },
+  "scripts": {
+    "start": "node",
+    "dev": "nodemon"
+  }
+}
