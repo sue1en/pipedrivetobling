@@ -1,6 +1,7 @@
 const express = require("express");
 const pipedrive = require("pipedrive");
 const cors = require("cors");
+require('dotenv').config()
 const { name, version } = require("./package.json")
 const port = process.env.PORT ? Number(process.env.PORT) : 3333;
 
@@ -15,12 +16,25 @@ const defaultClient = pipedrive.ApiClient.instance;
 let apiToken = defaultClient.authentications.api_key;
 apiToken.apiKey = apiKey;
 
+// app.get('/', async (req, res) => {
+//     const api = new pipedrive.DealsApi();
+//     const deals = await api.getDeals();
+
+//     res.send(deals);
+// });
+// app.get('/', async (req, res) => {
+//     const api = new pipedrive.DealsApi();
+//     const deals = await api.getDeals({"status":'won'});
+
+//     res.send(deals);
+// });
 app.get('/', async (req, res) => {
     const api = new pipedrive.DealsApi();
-    const deals = await api.getDeals();
+    const deals = await api.getDeals({"status":'open'});
 
-    res.send(deals.data);
+    res.send(deals);
 });
+
 
 app.listen(
   port,
