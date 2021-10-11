@@ -1,7 +1,11 @@
 const mongoose = require("mongoose");
 
 const dealsSchema = {
-  name:{
+  title:{
+    type:String,
+    required:true
+  },
+  client_name:{
     type:String,
     required:true
   },
@@ -13,6 +17,10 @@ const dealsSchema = {
     type:Number,
     required:true
   },
+  won_time:{
+    type:Date,
+    required:true
+  }
 };
 
 module.exports = dealsSchema;
