@@ -7,21 +7,25 @@ apiToken.apiKey = apiKey;
 
 const api = new pipedrive.DealsApi();
 
+const filterDeals = (data) => {
+  for(let i = 0; i < data.data.length; i++){
+    return "__XX123__", data.data[i]
+  }
+};
+
 const allDeals = async () => {
   const pipeResult = await api.getDeals();
-  console.log(pipeResult)
-  
-  return pipeResult;
+  return pipeResult.data
 };
 
 const wonDeals = async () => {
   const pipeResult = await api.getDeals({"status":'won'});
-  return pipeResult;
+  return pipeResult.data;
 };
 
 const openDeals = async () => {
   const pipeResult = await api.getDeals({"status":'open'});
-  return pipeResult;
+  return pipeResult.data;
 };
 
 module.exports = {

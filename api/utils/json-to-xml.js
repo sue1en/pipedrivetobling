@@ -2,12 +2,9 @@ const { toXML } = require("jstoxml");
 
 const jsonToXml = (pipeDealObj) => {
   const dealOrder = toXML({
-    produtos: [
+    pedidos: [
       {
-        produto: {
-          name: pipeDealObj.name,
-          status: pipeDealObj.status,
-        }
+        pedido:pipeDealObj,
       }
     ]
   });

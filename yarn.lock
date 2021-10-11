@@ -938,6 +938,11 @@ json-buffer@3.0.1:
   resolved "https://registry.yarnpkg.com/json-buffer/-/json-buffer-3.0.1.tgz#9338802a30d3b6605fbe0613e094008ca8c05a13"
   integrity sha512-4bV5BfR2mqfQTJm+V5tPPdf+ZpuhiIvTuAB5g8kcrXOZpTT/QwwVRWBywX1ozr6lEuPdbHxwaJlm9G6mI2sfSQ==
 
+jstoxml@^2.2.4:
+  version "2.2.4"
+  resolved "https://registry.yarnpkg.com/jstoxml/-/jstoxml-2.2.4.tgz#4ddbe0f4a05ea7043353fd6268d041f6a975b765"
+  integrity sha512-w95fvNbbrlEua3r5ckeaDnlhmLPd2VIU6HLbU6iyrPPUMRyH0Dz4wrFsoUMJxzurcTB24jNaXvk0xsiQ/7bDLw==
+
 kareem@2.3.2:
   version "2.3.2"
   resolved "https://registry.yarnpkg.com/kareem/-/kareem-2.3.2.tgz#78c4508894985b8d38a0dc15e1a8e11078f2ca93"
